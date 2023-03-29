@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Profile
+    </title>
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body> <div class="top"><h1> <i class="fa-regular fa-user user"></i>PROFILE</h1><a class="logout" href="login.html"><button>logout</button></a></div>
+    <div class="center">
+   
+     
+    <table  >
+        <table class="first">
+            <td >
+                <form onsubmit="event.preventDefault();onFormSubmit();sign(event);" autocomplete="off" method="post">
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Age</label>
+                        <input type="text" name="age" id="age">
+                    </div>
+                    <div>
+                        <label>Date Of Birth</label>
+                        <input type="text" name="dob" id="dob">
+                    </div>
+                    <div>
+                        <label>Contact Number</label>
+                        <input type="text" name="contact" id="contact">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <!-- <a class="logout" href="login.html"><button>logout</button></a> -->
+                        <input  type="submit" value="Submit">
+                       
+                    </div>
+                </form>
+            </td><br>
+            </table><br><br>
+            <table class="second">
+            <td class="to">
+                <table class="list" id="profile">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Age</th>
+                            <th>DOB</th>
+                            <th>Contact</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+    <!-- <a class="logout" href="login.html"><button>logout</button></a> -->
+    <script src="js/profile.js"></script>
+    <script src="https://kit.fontawesome.com/102326e940.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

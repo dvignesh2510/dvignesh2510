@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/register.js"></script>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin="crossorigin">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+        
+    
+  </head>
+  <body>
+    <div class="login">
+    <form id="fupForm" name="form1" onsubmit="signUp(event);" method="post">
+      
+      <img src="assets/logo.png" alt=""><br><br><br>
+      <i class="fa-solid fa-user user"></i>
+      <input type="text" name="fname" id="fname" placeholder="FIRSTNAME"  required>
+      <label for="name"></label><br><br>
+      <i class="fa-solid fa-user users"></i>
+      <input type="text" name="lname" id="lname" placeholder="LASTNAME" required>
+      <label for="name"></label><br><br>
+      <i class="fa fa-envelope envelope" aria-hidden="true"></i>
+      <input type="text" name="email" id="email" placeholder="EMAIL ADDRESS" required>
+      <label for="password"></label><br><br>
+      <i class="fa fa-mobile mobile" aria-hidden="true"></i> 
+      <input type="password" name="pwd" id="pwd" placeholder="PASSWORD" required>
+      <label for="password"></label><br><br>  
+      <i class="fa-solid fa-lock lock"></i>  
+      <input type="text" name="phone" id="phone" placeholder="PHONE NUMBER" required>
+      <label for="password"></label><br><br> 
+      
+      <a class="forgot" href="">Forgot password?</a><br>
+      <!-- <input type="button" name="save" value="Register" id="butsave" /> -->
+      <button id="butsave" type="submit">Sign Up</button>
+      <p>Already have an account? <a class="sign" href="login.html">login</a></p>
+    </form>
+</div>
+
+
+<div class="exist">
+<div class="success "id="success">Data added successfully !</div>
+<div class="danger" id="danger">Registration Failed</div>
+
+</div>
+<script src="https://kit.fontawesome.com/102326e940.js" crossorigin="anonymous"></script>
+  </body>
+</html>

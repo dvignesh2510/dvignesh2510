@@ -1,0 +1,124 @@
+body {
+    background: url("../assets/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 98vh;
+    width: 98%;
+    position: relative;
+}
+
+
+div.center{
+   top: 46%;
+   left:50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+div.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+h1{
+    color: rgb(226, 223, 223);
+}
+
+   
+table{
+    border-collapse: collapse;
+}
+
+table.list{
+    width:100%;
+}
+
+
+
+
+
+table.second{
+    width: 100%;
+   
+    align-items: center;
+    position: relative;
+}
+
+td{
+    color: rgb(5, 244, 77);
+    font-size: 1.2rem;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even),table.list thead>tr {
+    background-color: #ec2d2d;
+}
+
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #9d9d9d;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 30%;
+    background-color: #ddd;
+    color: #000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+button{
+   border: none;
+   padding: 10px 30px;
+   border-radius: 4px;
+   font-size: 20px;
+   background-color: rgb(193, 193, 193);
+
+}
+
+a.edit{
+    color: aqua;
+}
+a.delete{
+    color: aqua;
+}
+
+form div.form-action-buttons{
+    text-align: right;
+}
+
+i.user{
+    padding: 14px;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #f50d57;
+    margin-right: 4px;
+    margin-top: 30px;
+    font-size: 1rem;
+    
+}
+
+label.validation-error{
+    color:   red;
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
+}
